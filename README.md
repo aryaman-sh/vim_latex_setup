@@ -20,3 +20,8 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 ln -s ~/.vim/ideavimrc ~/.ideavimrc
 ```
 
+#UltiSnip 
+```
+:UltiSnipsEdit
+:snip <tab> for new snip
+```

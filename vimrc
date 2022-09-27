@@ -8,6 +8,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'lervag/vimtex'
 Plugin 'xuhdev/vim-latex-live-preview'
@@ -54,5 +56,16 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+" custom tex commands
+:iab fr \frac
+
+" mapping commands
+:map <F2> :LLPStartPreview
+
+" SNippets
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit="vertical"
 " save sudo file
 cmap w!! w !sudo tee > /dev/null %
