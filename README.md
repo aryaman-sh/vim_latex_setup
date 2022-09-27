@@ -1,11 +1,15 @@
-# dotvim
-
-vim as a `golang` and `python` IDE. read more from [here](https://medium.com/rahasak/vim-as-my-golang-and-python-ide-a08ac5f0fc15)
-
-# installation
+# Installing latex
 
 ```
-git clone git://github.com/erangaeb/dotvim.git ~/.vim
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-fonts-recommended
+sudo apt-get install texlive-fonts-extra
+sudo apt-get install texlive-latex-extra
+```
+
+# Vundle
+```
+:PluginInstall
 ```
 
 # symlinks
@@ -16,12 +20,3 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 ln -s ~/.vim/ideavimrc ~/.ideavimrc
 ```
 
-# plugins
-
-switch to the `~/.vim` directory, and install plugins with `git submodules`
-
-```
-cd ~/.vim
-git submodule init
-git submodule update
-```
