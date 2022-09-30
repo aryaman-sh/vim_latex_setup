@@ -1,3 +1,8 @@
+# Snippets
+- beg : Begin, end section
+- mk: inline maths
+- ml: newline maths
+- //: frac
 # Installing latex
 
 ```
@@ -25,3 +30,4 @@ ln -s ~/.vim/ideavimrc ~/.ideavimrc
 :UltiSnipsEdit
 :snip <tab> for new snip
 ```
+
